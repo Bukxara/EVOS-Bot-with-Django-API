@@ -29,6 +29,9 @@ location = ReplyKeyboardMarkup(
         [
             KeyboardButton(text="📍 Отправить геолокацию",
                            request_location=True)
+        ],
+        [
+            KeyboardButton(text="⬅️ Назад")
         ]
     ], resize_keyboard=True
 )
