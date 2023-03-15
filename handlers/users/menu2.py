@@ -127,9 +127,12 @@ async def callbacks_num(call: types.CallbackQuery, state: FSMContext):
         await update_num_text(call.message, user_value+1)
 
     elif action == "decr":
-        user_data[call.from_user.id] = user_value-1
-        await call.answer(f"{user_value-1} шт.")
-        await update_num_text(call.message, user_value-1)
+        if user_value > 1:
+            user_data[call.from_user.id] = user_value-1
+            await call.answer(f"{user_value-1} шт.")
+            await update_num_text(call.message, user_value-1)
+        else:
+            await call.answer(f"{user_value} шт.")
 
     elif action == "finish":
         await call.answer(f"{user_value} шт.")
