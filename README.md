@@ -1,2 +1,1 @@
-# aiogram-bot-shablon
-Telegramda  aiogram orqali  bot tuzish uchun shablon
+# EVOS Bot (DEMO) for Telegram with ReplyKeyboardMarkups
