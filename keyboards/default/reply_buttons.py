@@ -8,7 +8,7 @@ start = ReplyKeyboardMarkup(
         ],
         [
             KeyboardButton(text="🛍 Мои заказы"),
-            KeyboardButton(text="✍️ Оставить отзыв")
+            KeyboardButton(text="💬 Оставить отзыв")
         ]
     ], resize_keyboard=True
 )
@@ -16,7 +16,7 @@ start = ReplyKeyboardMarkup(
 phone_number = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text="📞 Мой номер", request_contact=True)
+            KeyboardButton(text="📱 Мой номер", request_contact=True)
         ],
         [
             KeyboardButton(text="⬅️ Назад")
@@ -27,7 +27,7 @@ phone_number = ReplyKeyboardMarkup(
 location = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text="📍 Отправить геолокацию",
+            KeyboardButton(text="🌍 Отправить геолокацию",
                            request_location=True)
         ],
         [
